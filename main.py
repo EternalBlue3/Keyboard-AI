@@ -6,7 +6,6 @@ with open("Test.txt", "r") as fh:
     test = ''.join(fh.readlines()).replace('\n', '').lower()
     fh.close()
 
-
 default = "qwertyuiopasdfghjkl;zxcvbnm,.?" # QWERTY
 minscore = math.inf
 best_keyboard = default
