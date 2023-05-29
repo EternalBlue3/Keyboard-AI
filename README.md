@@ -2,6 +2,4 @@
 
 This code is based off of this video: https://www.youtube.com/watch?v=EOaPb9wrgDY
 
-This code currently does not work as it calculates the distance taken to type a given amount of text incorrectly. If you can offer any help, I thank you greatly!
-
-According to adumb, the sentence "The quick brown fox jumps over the lazy dog." has a distance of 34.661, but my algorithm calculates it to 45.891.
+This code is a brute force method to try to find the best possible keyboard. This is not feasible as there are 30! permutations to the qwerty keyboard; however, I still decided to write this code for demo purposes. I will be writing my own genetic algorithm similar to the one used by Adumb in his video.
