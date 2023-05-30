@@ -27,9 +27,9 @@ def evaluate(keyboard, test):
                     fingery = finger[0]
                     difference = abs(y - fingery)  # Get y value difference
 
-                    if y == 0 and fingery == 1 or y == 1 and fingery == 0:  # From y=1 to y=0 or y=0 to y=1 (distance += 1.032)
+                    if (y == 0 and fingery == 1) or (y == 1 and fingery == 0):  # From y=1 to y=0 or y=0 to y=1 (distance += 1.032)
                         distance += 1.032
-                    elif y == 2 and fingery == 1 or y == 1 and fingery == 2:  # From y=1 to y=2 or y=2 to y=1 (distance += 1.118)
+                    elif (y == 2 and fingery == 1) or (y == 1 and fingery == 2):  # From y=1 to y=2 or y=2 to y=1 (distance += 1.118)
                         distance += 1.118
                     elif difference == 2:
                         distance += 2.138
