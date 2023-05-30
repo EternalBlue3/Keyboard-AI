@@ -1,10 +1,8 @@
 # Keyboard-AI
 
-This code is based off of this video: https://www.youtube.com/watch?v=EOaPb9wrgDY
+This code in this repository is based off of this video: https://www.youtube.com/watch?v=EOaPb9wrgDY
 
-This code is a brute force method to try to find the best possible keyboard. This is not feasible as there are 30! permutations to the QWERTY keyboard. I decided to be a bit smarter, and generate permutations of the RSTLNE keyboard, but this is still slow, and I will be writing my own genetic algorithm similar to the one used by Adumb in his video.
-
-Here is the output of the program after the first 2 million permutations:
+I started with a brute force approach of generating millions of permutations of the QWERTY keyboard to see if I could find the best one. Some quick math shows that this is not feasible as there are 30! permutations of the QWERTY keyboard. Instead, I decided to take the keyboard from Adumb's video (RSTLNE), and generate permutations of that. Here is the output of the brute force program after the first 2 million permutations:
 ```
 ---------------------------------------------
 QWERTY keyboard:
@@ -20,6 +18,13 @@ Best keyboard found during search:
     Score: 6343.03
 ---------------------------------------------
 ```
-The two stage plan:
-- Use genetic algorithm to find pretty good keyboard
+While I successfully found a better keyboard, I still wanted to develop my own genetic algorithm. This led to a two stage plan.
+
+The plan:
+- Use genetic algorithm to find very good keyboard (like RSTLNE)
 - Use permutations brute force to optimize the bottom row by looking at the first 10! permutations
+
+By combining these strategies, I should be able to independently find a better keyboard than either RSTLNE, or the one I found by brute forcing permutations of the RSTLNE keyboard.
+
+The results:
+- I will put the results here as soon as I finish the programming and running of the algorithms
