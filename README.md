@@ -2,7 +2,9 @@
 
 This code in this repository is based off of this video: https://www.youtube.com/watch?v=EOaPb9wrgDY
 
-I started with a brute force approach of generating millions of permutations of the QWERTY keyboard to see if I could find the best one. Some quick math shows that this is not feasible as there are 30! permutations of the QWERTY keyboard. Instead, I decided to take the keyboard from Adumb's video (RSTLNE), and generate permutations of that. Here is the output of the brute force program after the first 2 million permutations:
+I started with a brute force approach of generating millions of permutations of the QWERTY keyboard to see if I could find the best one. Some quick math shows that this is not feasible as there are 30! permutations of the QWERTY keyboard. Instead, I decided to take the keyboard from Adumb's video (RSTLNE), and generate permutations of that. The code can be found in the file "brute_force_v1.py."
+
+Here is the output of the brute force program after the first 2 million permutations:
 ```
 ---------------------------------------------
 QWERTY keyboard:
@@ -26,5 +28,26 @@ The plan:
 
 By combining these strategies, I should be able to independently find a better keyboard than either RSTLNE, or the one I found by brute forcing permutations of the RSTLNE keyboard.
 
-The results:
-- I will put the results here as soon as I finish the programming and running of the algorithms
+Two stage plan results:
+
+So, step one went better than I could have hoped. Here is a truncated version of the final output of the program:
+```
+*** Running generation 199 ***
+
+Best of gen 199:
+----------
+Keyboard: lpgyj;umc.risadhotnewzvx?f,kbq
+Score: 6061.118
+
+
+Minimum score: 6061.118
+Best Keyboard:
+
+lpgyj;umc.
+risadhotne
+wzvx?f,kbq
+```
+
+The keyboard found is much better than the one found by generating permutations of the RSTLNE keyboard, and claims the throne for the best keyboard i've found so far.
+
+I will update this upon finishing the brute force algorithm.
