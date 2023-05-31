@@ -71,6 +71,6 @@ def evaluate(keyboard, test):
                         fingers[4][0] = y
                         fingers[4][1] = x
 
-        distance = round(distance, 6)
+        distance = round(distance, 6) # Round because floating point math is broken in python
 
     return distance
