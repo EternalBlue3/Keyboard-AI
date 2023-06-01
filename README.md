@@ -32,20 +32,22 @@ Two stage plan results:
 
 So, step one went better than I could have hoped. Here is a truncated version of the final output of the program:
 ```
-*** Running generation 199 ***
+*** Running generation 329 ***
 
-Best of gen 199:
+Best of gen 329:
 ----------
-Keyboard: lpgyj;umc.risadhotnewzvx?f,kbq
-Score: 6061.118
+Keyboard: yumpj;gl,daonihcsretqxfz?bvw.k
+Score: 6052.453
 
 
-Minimum score: 6061.118
+Minimum score: 6052.453
 Best Keyboard:
 
-lpgyj;umc.
-risadhotne
-wzvx?f,kbq
+yumpj;gl,d
+aonihcsret
+qxfz?bvw.k
+
+Time taken to run 330 generations: 56097.44495868683s
 ```
 
 The keyboard found is much better than the one found by generating permutations of the RSTLNE keyboard, and claims the throne for the best keyboard i've found so far.
