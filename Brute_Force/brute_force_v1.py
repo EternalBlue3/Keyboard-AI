@@ -45,7 +45,7 @@ if __name__ == '__main__':
     # Find the minimum score and corresponding keyboard
     minscore = min(scores)
     minscore_index = scores.index(minscore)
-    best_keyboard = ''.join(list(islice(permutations(rstlne), start_index + iterations))[minscore_index])
+    best_keyboard = ''.join(list(islice(permutations(rstlne), start_index, start_index + iterations))[minscore_index])
     best_keyboard = [best_keyboard[:10], best_keyboard[10:20], best_keyboard[20:30]]
 
     print(f"Best keyboard found during search:\n    Keyboard: {best_keyboard}\n    Score: {minscore}\n    Time to calculate: {time.time()-start}s")
