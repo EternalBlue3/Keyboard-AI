@@ -63,11 +63,12 @@ def mate(board1, board2):
     return ''.join(child)
 
 if __name__ == '__main__':
-    generations = 200
-    population_size = 800
+    generations = 330
+    population_size = 5000
     
     best_score = float('inf')
     best_keyboard = None
+    starttime = time.time()
 
     keyboards = initial_population(population_size)
     for x in range(generations):
@@ -85,4 +86,4 @@ if __name__ == '__main__':
     print("Best Keyboard:\n")
     for x in [best_keyboard[:10], best_keyboard[10:20], best_keyboard[20:30]]:
         print(x)
-    print()
+    print(f"\nTime taken to run {str(generations)} generations: {time.time()-starttime}s")
