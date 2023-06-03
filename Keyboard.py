@@ -7,6 +7,7 @@ def evaluate(keyboard, test):
     for letter in test:
         if letter == ' ':
             fingers = [finger[:] for finger in static_fingers]
+            continue
         for y, row in enumerate(keyboard):
             if letter in row:
                 x = row.index(letter)
