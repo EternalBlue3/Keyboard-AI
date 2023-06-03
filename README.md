@@ -52,4 +52,6 @@ Time taken to run 330 generations: 56097.44495868683s
 
 The keyboard found is much better than the one found by generating permutations of the RSTLNE keyboard, and claims the throne for the best keyboard i've found so far.
 
-I will update this upon finishing the brute force algorithm.
+Dissapointingly, the permutations algorithm, which can be found in "brute_force_v2.py" did not manage to find a better keyboard than the one found by the genetic algorithm. If you want to run any of the code found above, make sure that all files are located in the same directory.
+
+Another thing to mention is distance isn't the only metric by which to evaluate a keyboard. I may come back in the future, and use a better evaluation function, or rewrite and optimize the code in c++, but for now I am going to focus on other projects. If you want to learn more, watch the video that this repository was based on. It is a great video and if you found this interesting, you will love the video.
